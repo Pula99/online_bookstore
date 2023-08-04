@@ -32,7 +32,12 @@ if(isset($_GET['page'])){
         $_SESSION = array();
         session_destroy();
         header('Location: /online_bookstore?page=Login');
-    }else{
+
+    }else if($_GET['page'] == "Home"){// when get request send to Home page
+        require_once 'admin/controllers/Home.php';
+        $register = new Home();
+        $register->index();
+    }else {
         header('Location: 404.html');
     } 
 //-----------------------------------------------------------------------------------------
