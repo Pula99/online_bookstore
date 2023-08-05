@@ -33,145 +33,20 @@
 
         </nav>
 
-        <div class="main">
 
-            <div class="main_tag">
-                <h1>WELCOME TO<br><span>BOOK STORE</span></h1>
-
-                <p>
-                    Unlock Worlds, Embrace Stories: Welcome to Our Bookstore!
-                </p>
-                <a href="?page=ContactUs" class="main_btn">Learn More</a>
-
+        <div class="banner">
+            <div class="banner-content">
             </div>
-
-            <div class="main_img">
-                <img src="images/home_banner.png">
-            </div>
-
         </div>
+
 
     </section>
-
-
-
-    <!--New Arrival Books-->
-
-    <div class="new_arrivals_boks">
-
-        <h1>New Arrivals Books</h1>
-
-        <div class="new_arrivals_book_box">
-
-            <div class="new_arrivals_book_card">
-
-                <div class="new_arrivals_book_img">
-                    <img src="images/home/book_1.jpg">
-                </div>
-
-                <div class="new_arrivals_book_tag">
-                    <h2>New Arrival Books</h2>
-                    <p class="writer">John Deo</p>
-                    <div class="categories">Thriller, Horror, Romance</div>
-                    <p class="book_price">$25.50</p>
-                    <a href="#" class="f_btn">Learn More</a>
-                </div>
-
-            </div>
-
-            <div class="new_arrivals_book_card">
-
-                <div class="new_arrivals_book_img">
-                    <img src="images/home/book_2.jpg">
-                </div>
-
-                <div class="new_arrivals_book_tag">
-                    <h2>New Arrival Books</h2>
-                    <p class="writer">John Deo</p>
-                    <div class="categories">Thriller, Horror, Romance</div>
-                    <p class="book_price">$25.50</p>
-                    <a href="#" class="f_btn">Learn More</a>
-                </div>
-
-            </div>
-
-            <div class="new_arrivals_book_card">
-
-                <div class="new_arrivals_book_img">
-                    <img src="images/home/book_3.jpg">
-                </div>
-
-                <div class="new_arrivals_book_tag">
-                    <h2>New Arrival Books</h2>
-                    <p class="writer">John Deo</p>
-                    <div class="categories">Thriller, Horror, Romance</div>
-                    <p class="book_price">$25.50</p>
-                    <a href="#" class="f_btn">Learn More</a>
-                </div>
-
-            </div>
-
-            <div class="new_arrivals_book_card">
-
-                <div class="new_arrivals_book_img">
-                    <img src="images/home/book_4.jpg">
-                </div>
-
-                <div class="new_arrivals_book_tag">
-                    <h2>New Arrival Books</h2>
-                    <p class="writer">John Deo</p>
-                    <div class="categories">Thriller, Horror, Romance</div>
-                    <p class="book_price">$25.50</p>
-                    <a href="#" class="f_btn">Learn More</a>
-                </div>
-
-            </div>
-
-            <div class="new_arrivals_book_card">
-
-                <div class="new_arrivals_book_img">
-                    <img src="images/home/book_5.jpg">
-                </div>
-
-                <div class="new_arrivals_book_tag">
-                    <h2>New Arrival Books</h2>
-                    <p class="writer">John Deo</p>
-                    <div class="categories">Thriller, Horror, Romance</div>
-                    <p class="book_price">$25.50</p>
-                    <a href="#" class="f_btn">Learn More</a>
-                </div>
-
-            </div>
-
-            <div class="new_arrivals_book_card">
-
-                <div class="new_arrivals_book_img">
-                    <img src="images/home/book_11.jpg">
-                </div>
-
-                <div class="new_arrivals_book_tag">
-                    <h2>New Arrival Books</h2>
-                    <p class="writer">John Deo</p>
-                    <div class="categories">Thriller, Horror, Romance</div>
-                    <p class="book_price">$25.50</p>
-                    <a href="#" class="f_btn">Learn More</a>
-                </div>
-
-            </div>
-
-
-
-        </div>
-
-    </div>
-
-
 
 
     <!--Books-->
 
     <div class="books">
-        <h1>Books</h1>
+        <h1>Book Deals</h1>
 
         <div class="books_box">
 
@@ -388,8 +263,6 @@
                     Explore our wide selection of titles, find your next favorite read, and let the magic of literature transport you to new worlds. Happy reading!
                 </p>
             </div>
-
-        </div>
 
     </footer>
 

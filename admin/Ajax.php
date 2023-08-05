@@ -13,6 +13,12 @@ if(isset($_GET['ajax'])){
         $login = new Login();
         $login->auth();
     }
+
+    if($_GET['ajax'] == "x"){
+        require_once 'controllers/Login.php';
+        $login = new Login();
+        $login->auth();
+    }
 //-----------------------------------------------------------
 }else{
     echo json_encode(array("status" => "error", "msg" => "Function undeclared."));
