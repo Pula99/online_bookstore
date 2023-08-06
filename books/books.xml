@@ -1,0 +1,198 @@
+<?xml version="1.0"?>
+<books>
+  <book>
+    <book_id>1</book_id>
+    <book_name>Station Eleven</book_name>
+    <author>Emily St. John Mandel</author>
+    <publisher/>
+    <category_id>1</category_id>
+    <isbn_no>23111</isbn_no>
+    <price>4500.00</price>
+    <discount>0.00</discount>
+    <status>active</status>
+    <handled_by>1</handled_by>
+    <c_date>2023-08-04 09:18:34</c_date>
+    <category_name>Sci Fi</category_name>
+    <handled_user>Nadun</handled_user>
+  </book>
+  <book>
+    <book_id>2</book_id>
+    <book_name>Golu Hadawatha</book_name>
+    <author>Karunasena Jayalath</author>
+    <publisher>MD Gunasena</publisher>
+    <category_id>2</category_id>
+    <isbn_no>5443343</isbn_no>
+    <price>1500.00</price>
+    <discount>200.00</discount>
+    <status>active</status>
+    <handled_by>1</handled_by>
+    <c_date>2023-08-04 09:23:08</c_date>
+    <category_name>Romance</category_name>
+    <handled_user>Nadun</handled_user>
+  </book>
+  <book>
+    <book_id>5</book_id>
+    <book_name>Another Book updated</book_name>
+    <author>Hello</author>
+    <publisher>Hello</publisher>
+    <category_id>1</category_id>
+    <isbn_no>34343</isbn_no>
+    <price>2400.00</price>
+    <discount>400.00</discount>
+    <status>active</status>
+    <handled_by>1</handled_by>
+    <c_date>2023-08-04 09:49:11</c_date>
+    <category_name>Sci Fi</category_name>
+    <handled_user>Nadun</handled_user>
+  </book>
+  <book>
+    <book_id>6</book_id>
+    <book_name>Twilight</book_name>
+    <author>Tend</author>
+    <publisher/>
+    <category_id>3</category_id>
+    <isbn_no>6667</isbn_no>
+    <price>4200.00</price>
+    <discount>0.00</discount>
+    <status>active</status>
+    <handled_by>1</handled_by>
+    <c_date>2023-08-04 10:14:07</c_date>
+    <category_name>Fantacy</category_name>
+    <handled_user>Nadun</handled_user>
+  </book>
+  <book>
+    <book_id>7</book_id>
+    <book_name>New book 2</book_name>
+    <author>New Author 2</author>
+    <publisher/>
+    <category_id>1</category_id>
+    <isbn_no>334455</isbn_no>
+    <price>450.00</price>
+    <discount>0.00</discount>
+    <status>active</status>
+    <handled_by>1</handled_by>
+    <c_date>2023-08-04 12:17:54</c_date>
+    <category_name>Sci Fi</category_name>
+    <handled_user>Nadun</handled_user>
+  </book>
+  <book>
+    <book_id>8</book_id>
+    <book_name>The Giver</book_name>
+    <author>Lois Lowry</author>
+    <publisher>Gunasena</publisher>
+    <category_id>1</category_id>
+    <isbn_no>445454355</isbn_no>
+    <price>12.00</price>
+    <discount>2.00</discount>
+    <status>active</status>
+    <handled_by>1</handled_by>
+    <c_date>2023-08-06 19:29:09</c_date>
+    <category_name>Sci Fi</category_name>
+    <handled_user>Nadun</handled_user>
+  </book>
+  <book>
+    <book_id>9</book_id>
+    <book_name>The Wright Brothers</book_name>
+    <author>David McCulloh</author>
+    <publisher/>
+    <category_id>4</category_id>
+    <isbn_no>455433</isbn_no>
+    <price>20.00</price>
+    <discount>4.99</discount>
+    <status>active</status>
+    <handled_by>1</handled_by>
+    <c_date>2023-08-06 19:29:58</c_date>
+    <category_name>Biogrphy</category_name>
+    <handled_user>Nadun</handled_user>
+  </book>
+  <book>
+    <book_id>10</book_id>
+    <book_name>Radical Gardening</book_name>
+    <author>George Mckey</author>
+    <publisher>Booli</publisher>
+    <category_id>5</category_id>
+    <isbn_no>453333</isbn_no>
+    <price>13.00</price>
+    <discount>0.00</discount>
+    <status>active</status>
+    <handled_by>1</handled_by>
+    <c_date>2023-08-06 19:30:47</c_date>
+    <category_name>Gardening</category_name>
+    <handled_user>Nadun</handled_user>
+  </book>
+  <book>
+    <book_id>11</book_id>
+    <book_name>Red Queen</book_name>
+    <author>Victoria Aveyard</author>
+    <publisher/>
+    <category_id>2</category_id>
+    <isbn_no>6643444</isbn_no>
+    <price>14.00</price>
+    <discount>1.99</discount>
+    <status>active</status>
+    <handled_by>1</handled_by>
+    <c_date>2023-08-06 19:31:23</c_date>
+    <category_name>Romance</category_name>
+    <handled_user>Nadun</handled_user>
+  </book>
+  <book>
+    <book_id>12</book_id>
+    <book_name>To Kill A Mockingbird</book_name>
+    <author>Harper Lee</author>
+    <publisher>Penguin</publisher>
+    <category_id>6</category_id>
+    <isbn_no>5454545</isbn_no>
+    <price>15.00</price>
+    <discount>0.00</discount>
+    <status>active</status>
+    <handled_by>1</handled_by>
+    <c_date>2023-08-06 19:32:15</c_date>
+    <category_name>Adventure</category_name>
+    <handled_user>Nadun</handled_user>
+  </book>
+  <book>
+    <book_id>13</book_id>
+    <book_name>Harry Potter</book_name>
+    <author>JK Rowling</author>
+    <publisher>Warner Bros</publisher>
+    <category_id>3</category_id>
+    <isbn_no>664435</isbn_no>
+    <price>16.00</price>
+    <discount>3.00</discount>
+    <status>active</status>
+    <handled_by>1</handled_by>
+    <c_date>2023-08-06 19:32:52</c_date>
+    <category_name>Fantacy</category_name>
+    <handled_user>Nadun</handled_user>
+  </book>
+  <book>
+    <book_id>14</book_id>
+    <book_name>Heroes of the olympus</book_name>
+    <author>Rick Riordran</author>
+    <publisher>Rick</publisher>
+    <category_id>3</category_id>
+    <isbn_no>66444</isbn_no>
+    <price>9.98</price>
+    <discount>0.00</discount>
+    <status>active</status>
+    <handled_by>1</handled_by>
+    <c_date>2023-08-06 19:33:33</c_date>
+    <category_name>Fantacy</category_name>
+    <handled_user>Nadun</handled_user>
+  </book>
+  <book>
+    <book_id>15</book_id>
+    <book_name>Shattered</book_name>
+    <author>Dick Francis</author>
+    <publisher>Penguin</publisher>
+    <category_id>6</category_id>
+    <isbn_no>545445</isbn_no>
+    <price>12.00</price>
+    <discount>0.00</discount>
+    <status>active</status>
+    <handled_by>1</handled_by>
+    <c_date>2023-08-06 19:35:39</c_date>
+    <category_name>Adventure</category_name>
+    <handled_user>Nadun</handled_user>
+  </book>
+</books>

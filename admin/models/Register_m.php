@@ -47,9 +47,10 @@ class Register_m{
             $address = $con->real_escape_string($_POST['address']);
             $email = $con->real_escape_string($_POST['email']);
             $password = $con->real_escape_string($_POST['password1']);
+            $user_type = "customer";
 
-            $sql = "INSERT INTO bookstore_user (first_name, last_name, address, email, password) 
-                    VALUES ('$first_name', '$last_name', '$address', '$email', '$password')";
+            $sql = "INSERT INTO bookstore_user (first_name, last_name, address, email, password, user_type) 
+                    VALUES ('$first_name', '$last_name', '$address', '$email', '$password', '$user_type')";
 
             if($con->query($sql) === TRUE){
                 return array("status" => "success", "msg" => "Registered successfully.");

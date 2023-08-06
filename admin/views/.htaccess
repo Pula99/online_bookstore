@@ -1,1 +1,2 @@
 Deny from all
+ErrorDocument 403 /online_bookstore/forbidden.html

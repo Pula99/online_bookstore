@@ -7,48 +7,50 @@
     <link rel="stylesheet" href="admin/assets/css/authforms.css">
 </head>
 <body>
-    <div class="container">
-        <div style="display: flex; justify-content: center;">
-            <div class="img_div">
-                <img class="logo" src="images/logo.png" alt="Logo">
+    <div class="wrapper">
+        <div class="container">
+            <div style="display: flex; justify-content: center;">
+                <div class="img_div">
+                    <img class="logo" src="images/logo.png" alt="Logo">
+                </div>
             </div>
+            <h2>User Registration</h2>
+            <form action="/" method="post" id="reg_form">
+                <div class="form-group">
+                    <label for="first_name">First Name <span style="color:red;">*</span></label>
+                    <input type="text" id="first_name" name="first_name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="last_name">Last Name <span style="color:red;">*</span></label>
+                    <input type="text" id="last_name" name="last_name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="address">Address</label>
+                    <input type="text" id="address" name="address">
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email <span style="color:red;">*</span></label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="password">Password <span style="color:red;">*</span></label>
+                    <input type="password" id="password" name="password1" required>
+                    <p id="password-error" style="color:red; font-weight:bold;font-size: 12px;text-align: justify;"></p>
+                </div>
+
+                <div class="form-group">
+                    <label for="re-password">Confirm Password <span style="color:red;">*</span></label>
+                    <input type="password" id="re-password" name="password2" required>
+                </div>
+
+                <button type="submit">Register</button>
+                <p style="text-align: center;">Already have an account? <a href="/online_bookstore?page=Login">Login</a></p>
+            </form>
         </div>
-        <h2>User Registration</h2>
-        <form action="/" method="post" id="reg_form">
-            <div class="form-group">
-                <label for="first_name">First Name <span style="color:red;">*</span></label>
-                <input type="text" id="first_name" name="first_name" required>
-            </div>
-
-            <div class="form-group">
-                <label for="last_name">Last Name <span style="color:red;">*</span></label>
-                <input type="text" id="last_name" name="last_name" required>
-            </div>
-
-            <div class="form-group">
-                <label for="address">Address</label>
-                <input type="text" id="address" name="address">
-            </div>
-
-            <div class="form-group">
-                <label for="email">Email <span style="color:red;">*</span></label>
-                <input type="email" id="email" name="email" required>
-            </div>
-
-            <div class="form-group">
-                <label for="password">Password <span style="color:red;">*</span></label>
-                <input type="password" id="password" name="password1" required>
-                <p id="password-error" style="color:red; font-weight:bold;font-size: 12px;text-align: justify;"></p>
-            </div>
-
-            <div class="form-group">
-                <label for="re-password">Confirm Password <span style="color:red;">*</span></label>
-                <input type="password" id="re-password" name="password2" required>
-            </div>
-
-            <button type="submit">Register</button>
-            <p style="text-align: center;">Already have an account? <a href="/online_bookstore?page=Login">Login</a></p>
-        </form>
     </div>
 
     <script>
@@ -69,7 +71,10 @@
             try{
                 fetch('admin/Ajax.php?ajax=register', {
                     method: 'POST',
-                    body: formData
+                    body: formData,
+                    headers: {
+                        'X-Ajax-Request': 'true' // to identify AJAX requests
+                    }
                 })
                 .then(response => {
                     if(response.ok){

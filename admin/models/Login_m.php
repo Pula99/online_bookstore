@@ -36,6 +36,7 @@ class Login_m{
                 $_SESSION['first_name'] = $row["first_name"];
                 $_SESSION['last_name'] = $row["last_name"];
                 $_SESSION['user_id'] = $row["user_id"];
+                $_SESSION['user_type'] = $row["user_type"];
 
                 return array("status" => "success", "msg" => "Login success.");
             }else{

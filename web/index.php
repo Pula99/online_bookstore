@@ -1,0 +1,1 @@
+<?php header('Location: /online_bookstore?page=Home'); ?>

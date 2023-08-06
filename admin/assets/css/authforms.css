@@ -18,6 +18,10 @@ body {
     box-sizing: border-box;
 }
 
+.wrapper{
+    margin: 30px auto;
+}
+
 h2 {
     text-align: center;
     color: #00AA91;

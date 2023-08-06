@@ -7,27 +7,30 @@
     <link rel="stylesheet" href="admin/assets/css/authforms.css">
 </head>
 <body>
-    <div class="container">
-        <div style="display: flex; justify-content: center;">
-            <div class="img_div">
-                <img class="logo" src="images/logo.png" alt="Logo">
+    <div class="wrapper">
+        <div class="container">
+            <div style="display: flex; justify-content: center;">
+                <div class="img_div">
+                    <img class="logo" src="images/logo.png" alt="Logo">
+                </div>
             </div>
+            <h2>User Login</h2>
+            <form action="/" method="post" id="log_form">
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" required>
+                </div>
+
+                <button type="submit">Login</button>
+                <p style="text-align: center;">Don't have an account? <a href="/online_bookstore?page=Register">Register</a></p>
+                <p style="text-align: center; margin-top: -10px;">Need to browse our site? <a href="/online_bookstore?page=Home">Click here</a></p>
+            </form>
         </div>
-        <h2>User Login</h2>
-        <form action="/" method="post" id="log_form">
-            <div class="form-group">
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
-            </div>
-
-            <div class="form-group">
-                <label for="password">Password:</label>
-                <input type="password" id="password" name="password" required>
-            </div>
-
-            <button type="submit">Login</button>
-            <p style="text-align: center;">Don't have an account? <a href="/online_bookstore?page=Register">Register</a></p>
-        </form>
     </div>
 
     <script>
@@ -43,7 +46,10 @@
             try{
                 fetch('admin/Ajax.php?ajax=login', {
                     method: 'POST',
-                    body: formData
+                    body: formData,
+                    headers: {
+                        'X-Ajax-Request': 'true' // to identify AJAX requests
+                    }
                 })
                 .then(response => {
                     if(response.ok){

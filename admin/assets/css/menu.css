@@ -1,0 +1,122 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #007B73;
+    padding: 10px;
+    color: #fff;
+    z-index: 1;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.logo {
+    width: 80px;
+    height: 80px;
+    margin-left: 20px;
+    border: 2px solid #180c70;
+    border-radius:50%;
+}
+
+.greeting {
+    font-size: 20px;
+    margin-right: 20px;
+}
+
+.sidebar-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 300px;
+    background-color: #007B73;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    color: #fff;
+    padding-top: 104px;
+    transition: transform 0.3s cubic-bezier(0.76, 0.05, 0.86, 0.06);
+}
+
+.sidebar-links {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.sidebar-links a {
+    color: #fff;
+    text-decoration: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    min-height: 70px;
+    transition: background-color 0.3s ease;
+}
+
+.sidebar-links a:hover {
+    background-color:#014c6d;
+}
+
+.sidebar-links i {
+    font-size: 18px;
+    margin-bottom: 5px;
+    flex: 0.3;
+    text-align: center;
+}
+
+.sidebar-links span {
+    font-size: 18px;
+    margin-bottom: 5px;
+    flex: 0.7;
+}
+
+.sidebar-toggle-btn {
+    margin-left: 10px;
+    font-size: 24px;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 3px;
+    border: 1px solid #fff;
+    padding: 3px 7px;
+    background-color: transparent;
+}
+
+.sidebar-container.sidebr-collapsed {
+    transform: translateX(-100%);
+}
+
+.main-container {
+    margin-left: 300px;
+    transition: margin-left 0.3s cubic-bezier(0.76, 0.05, 0.86, 0.06);
+    overflow-y: auto;
+    max-height: 100vh;
+}
+
+.main-container.sidebr-collapsed {
+    margin-left: 0;
+}
+
+.link-active{
+    background-color:#014c6d;
+}
+
+@media screen and (max-width: 600px) {
+    .logo {
+        display: none;
+    }
+
+    .sidebar-container{
+        padding-top: 84px;
+    }
+}
